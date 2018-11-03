@@ -1,0 +1,36 @@
+{% extends "./base.html" %}
+{% load i18n %}
+{% block content %}
+{% load static %}
+<div class="container-fluid px-0">
+    <img src="{% static 'header-img.png' %}" class="head-bg"/>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <h1>{{ title }}</h1>
+            {% load static %}
+            <a href="https://vk.com/dobrodel37"><img src="{% static 'logo3.jpg' %}"/></a>
+            <h2>{% trans 'Фонд социальной помощи и поддержки населения' %}</h2>
+            <p>{% trans 'Адрес:153006, Ивановская обл.,' %}</p>
+            <p>{% trans 'г.Иваново, 11 проезд, д.7, оф.302' %}</p>
+            <p>{% trans 'тел. +7 (930) 005-69-59' %}</p>
+            <h2>{% trans 'Проект в социальных сетях' %}</h2>
+            <ul class="list-unstyled list-inline">
+                <li class="list-inline-item"><a href="https://vk.com/flybowtie">Вконтакте</a></li>
+                <li class="list-inline-item"><a href="https://www.facebook.com/flybowtie/">Facebook</a></li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/mybabochki/">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="col-5">
+            {% include "./includes/menu.html" %}
+            {% include "./includes/sidebar.html" %}
+        </div>
+    </div>
+ </div>
+ {% include "./includes/map.html" %}
+ {% endblock %}
+
+
+
+

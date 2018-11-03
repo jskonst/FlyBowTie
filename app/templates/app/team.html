@@ -1,0 +1,52 @@
+{% extends "./base.html" %}
+
+{% block content %}
+{% load i18n %}
+{% load static %}
+<div class="container-fluid px-0">
+    <img src="{% static 'header-img.png' %}" class="head-bg"/>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <h1>{{ title }}</h1>
+            <p>{% blocktrans %}Команда проекта - это творческие, неравнодушные люди, силами которых проект развивается и набирает обороты. 
+                Чувствуете, что можете и хотите помочь? Мы всегда рады единомышленникам и готовы принять вас в команду!{% endblocktrans %}</p>
+            {% load static %}
+            <div class="avatars">
+                <div class="col-4 py-4 text-center">
+                    <img src="{% static 'Kirianov.png' %}" class="w-100"/>
+                    <h2>Алексей Кирьянов</h2>
+                    <p>руководитель проекта</p>
+                </div>
+                <div class="col-4 py-4 text-center">
+                    <img src="{% static 'Maslov.png' %}" class="w-100"/>
+                    <h2>Дмитрий Маслов</h2>
+                    <p>куратор проекта</p>
+                </div>
+                <div class="col-4 py-4 text-center">
+                    <img src="{% static 'Konkova.png' %}" class="w-100"/>
+                    <h2>Галина Конькова</h2>
+                    <p>куратор участников</p>
+                </div>
+                <div class="col-4 py-4 text-center">
+                    <img src="{% static 'Vorobyev.png' %}" class="w-100"/>
+                    <h2>Борис Воробьев</h2>
+                    <p>техническое обеспечение</p>
+                </div>
+                <div class="col-4 py-4 text-center">
+                    <img src="{% static 'Golovkin.png' %}" class="w-100"/>
+                    <h2>Дмитрий Головкин</h2>
+                    <p>техническое обеспечение</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            {% include "./includes/menu.html" %}
+            {% include "./includes/sidebar.html" %}
+        </div>
+    </div>
+</div>
+{% include "./includes/map.html" %}
+
+{% endblock %}
