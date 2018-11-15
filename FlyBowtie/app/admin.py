@@ -4,10 +4,11 @@ from .models import Person, Position
 # Register your models here.
 
 class PersonAdmin(admin.ModelAdmin):
-    model = Person
+    list_display = ('first_name', 'last_name', 'img')
+
 
 class PositonAdmin(admin.ModelAdmin):
     model = Position
 
-admin.site.register(Person)
-admin.site.register(Position)
+admin.site.register(Person, PersonAdmin)
+admin.site.register(Position, PositonAdmin)

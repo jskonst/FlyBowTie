@@ -1,0 +1,12 @@
+{% extends "./base.html" %}
+{% block title %} Test {% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="container">
+    {% for per in persons %}
+        <img src="{{ per.img.url }}"/>
+        <p>{{ per.first_name }} {{ per.last_name }} / {{ per.position }}</p>
+    {% endfor %}
+</div>
+{% endblock %}

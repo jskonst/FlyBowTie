@@ -11,4 +11,5 @@ urlpatterns = (
     url(r'^charity', views.charity, name="charity"),
     url(r'^documents', views.documents, name="documents"),
     url(r'^media', views.media, name="media"),
+    url(r'^test', views.PersonList.as_view(), name="test"),
 )

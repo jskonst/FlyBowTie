@@ -1,11 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpRequest
 from django.utils.translation import ugettext as _
-from django.utils.translation import LANGUAGE_SESSION_KEY
-from django.views.i18n import set_language
+from django.views.generic import ListView
+from .models import Person
 
-def select_lang(request, code):
-    request.session[LANGUAGE_SESSION_KEY] = code
+
+class PersonList(ListView):
+    model = Person
+    context_object_name = 'persons'
+    template_name = 'app/test.html'
 
 def home(request):
     assert isinstance(request, HttpRequest)
