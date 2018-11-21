@@ -21,3 +21,12 @@ class Position(models.Model):
         verbose_name = "должность"
     def __str__(self):
         return self.name
+
+class MediaList(models.Model):  
+    imgContent = models.ImageField(upload_to='', verbose_name='Изображение')
+    class Meta(object):
+        verbose_name_plural = "Галерея"
+        verbose_name = "медиа"
+    def __str__(self):
+        return '{0}'.format(self.imgContent)
+

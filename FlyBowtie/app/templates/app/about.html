@@ -8,7 +8,10 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-7">
+        <div class="col-12 d-md-none">
+            {% include "./includes/menu.html" %}
+        </div>
+        <div class="col-12 col-md-7 my-4 my-md-0">
             <h1>{{ title }}</h1>
                 <p>{% blocktrans %}«Полет бабочки» – социальный проект Фонда «Доброе дело», получивший в 2016 году поддержку в рамках «президентских» 
                     грантов для некомерчески организаций по конкурсу Фонда поддержки гражданской активности в малых городах и сельских территориях 
@@ -35,10 +38,18 @@
                 <p>{% blocktrans %}Разработка ПО, сайта, учебных курсов и методических материалов будет осуществляться совместно с Центром технического
                     творчества «<a href="http://nova37.ru">Новация</a>». Следуя девизу проекта «Расправив крылья, стремлюсь к мечте», мы планируем масштабировать проект
                     на другие регионы России, способствуя социальной адаптации большего числа молодых людей с ОВЗ.{% endblocktrans %}</p>
-            </div>
-            <div class="col-5">
-                {% include "./includes/menu.html" %}
-                {% include "./includes/sidebar.html" %}
+        </div>
+        <div class="col-12 col-md-5">
+                <div class="row">
+                    <div class="d-none col-12 d-md-block">
+                        {% include "./includes/menu.html" %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        {% include "./includes/sidebar.html" %}
+                    </div>
+                </div>
             </div>
         </div>
 </div>

@@ -62,12 +62,13 @@ ul, p{
     width: 100%;
 }
 .lang-btn input{
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     background-color: rgba(255, 102, 0, 0.6);
     color: #fff;
     border: none;
+    border-radius: 25%;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 .lang-btn input:hover {
     background-color: rgba(218, 94, 12, 0.7);
@@ -81,12 +82,17 @@ ul, p{
 .page-footer {
     margin-top: 2rem;
     background-color: #ffc299;
+    /* background-color: rgba(255, 102, 0, 0.6); */
     padding: 4rem;
 }
 .footer-links .list-inline-item i{
     color: #fff;
     font-size: 2.5rem;
     padding: 0.3rem 0.5rem;
+    transition: 0.4s;
+}
+.footer-links .list-inline-item i:hover {
+    color: rgba(218, 94, 12, 0.7);
 }
 footer p{
     color: #000;

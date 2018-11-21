@@ -25,7 +25,7 @@ SECRET_KEY = '9mrfwcq%ls#-$2rxj1_(px993sroeil=)y0%0l=1u611(nk9ed'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -115,7 +115,6 @@ LANGUAGES = (
 )
 
 LOCALE_PATHS = (
-    #'FlyBowtie/locale',
     os.path.join(BASE_DIR, 'locale'),
 )
 
@@ -127,10 +126,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 #STATIC_ROOT = os.path.join(*(BASE_DIR.split(os.path.sep) + ['static']))

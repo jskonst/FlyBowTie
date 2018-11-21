@@ -1,12 +1,11 @@
-
+{% load i18n %}
 <div class="container my-3">
     <div class="row">
-        <div class="col-3 mr-auto">
+        <div class="col-3 mr-auto px-0">
             {% load static %}
             <a href="{% url 'home' %}" ><img src="{% static 'logo.png' %}" class="logo"/></a>
-            {% load i18n %}
         </div>
-        <div class="col-4 ml-auto my-auto text-right">
+        <div class="col-12 col-md-4 ml-md-auto text-md-right my-auto">
             <ul class="list-unstyled list-inline lang-btn">
                 <li class="list-inline-item py-2">
                     <form action="{% url 'set_language' %}" method="post">

@@ -1,52 +1,42 @@
 {% extends "./base.html" %}
 
-{% block content %}
 {% load i18n %}
+{% block content %}
 {% load static %}
 <div class="container-fluid px-0">
     <img src="{% static 'header-img.png' %}" class="head-bg"/>
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-7">
-            <h1>{{ title }}</h1>
+        <div class="col-12 d-md-none">
+            {% include "./includes/menu.html" %}
+        </div>
+        <div class="col-12 col-md-7 my-4 my-md-0">
+            <h1>{% block title %} {% trans 'Команда' %} {% endblock %}</h1>
             <p>{% blocktrans %}Команда проекта - это творческие, неравнодушные люди, силами которых проект развивается и набирает обороты. 
                 Чувствуете, что можете и хотите помочь? Мы всегда рады единомышленникам и готовы принять вас в команду!{% endblocktrans %}</p>
-            {% load static %}
             <div class="avatars">
-                <div class="col-4 py-4 text-center">
-                    <img src="{% static 'Kirianov.png' %}" class="w-100"/>
-                    <h2>Алексей Кирьянов</h2>
-                    <p>руководитель проекта</p>
+                {% for per in persons %}
+                <div class="col-12 col-md-6 col-lg-4 py-4 text-center">
+                    <img src="{{MEDIA_URL}}{{ per.img.url }}" class="rounded-circle" width="100%" height="70%"/>
+                    <h2>{{ per.first_name }} {{ per.last_name }}</h2>
+                    <p>{{ per.position }}</p>
                 </div>
-                <div class="col-4 py-4 text-center">
-                    <img src="{% static 'Maslov.png' %}" class="w-100"/>
-                    <h2>Дмитрий Маслов</h2>
-                    <p>куратор проекта</p>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-12 col-md-5">
+            <div class="row">
+                <div class="d-none col-12 d-md-block">
+                    {% include "./includes/menu.html" %}
                 </div>
-                <div class="col-4 py-4 text-center">
-                    <img src="{% static 'Konkova.png' %}" class="w-100"/>
-                    <h2>Галина Конькова</h2>
-                    <p>куратор участников</p>
-                </div>
-                <div class="col-4 py-4 text-center">
-                    <img src="{% static 'Vorobyev.png' %}" class="w-100"/>
-                    <h2>Борис Воробьев</h2>
-                    <p>техническое обеспечение</p>
-                </div>
-                <div class="col-4 py-4 text-center">
-                    <img src="{% static 'Golovkin.png' %}" class="w-100"/>
-                    <h2>Дмитрий Головкин</h2>
-                    <p>техническое обеспечение</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    {% include "./includes/sidebar.html" %}
                 </div>
             </div>
         </div>
-        <div class="col-5">
-            {% include "./includes/menu.html" %}
-            {% include "./includes/sidebar.html" %}
-        </div>
     </div>
 </div>
-{% include "./includes/map.html" %}
-
 {% endblock %}

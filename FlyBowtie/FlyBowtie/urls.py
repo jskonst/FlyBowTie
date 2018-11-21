@@ -18,10 +18,18 @@ from django.urls import path
 from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls import include, url
 from app import views
+from . import settings
+from django.contrib.staticfiles.urls import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+ 
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),

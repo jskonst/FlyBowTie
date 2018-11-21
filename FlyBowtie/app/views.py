@@ -2,13 +2,18 @@ from django.shortcuts import render
 from django.http import HttpRequest
 from django.utils.translation import ugettext as _
 from django.views.generic import ListView
-from .models import Person
+from .models import Person, MediaList
 
 
 class PersonList(ListView):
     model = Person
     context_object_name = 'persons'
-    template_name = 'app/test.html'
+    template_name = 'app/team.html'
+
+class GalleryList(ListView):
+    model = MediaList
+    context_object_name = 'gallery'
+    template_name = 'app/media.html'
 
 def home(request):
     assert isinstance(request, HttpRequest)
@@ -48,15 +53,6 @@ def fund(request):
             'title': _('Фонд "Доброе дело"'),
         }
     )
-def team(request):
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/team.html',
-        {
-            'title': _('Команда'),
-        }
-    )
 def charity(request):
     assert isinstance(request, HttpRequest)
     return render(
@@ -73,14 +69,5 @@ def documents(request):
         'app/documents.html',
         {
             'title': _('Документы'),
-        }
-    )
-def media(request):
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/media.html',
-        {
-            'title': _('Медиагалерея'),
         }
     )

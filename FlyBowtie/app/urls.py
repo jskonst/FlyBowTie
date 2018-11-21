@@ -7,9 +7,9 @@ urlpatterns = (
     url(r'^about', views.about, name='about'),
     url(r'^contacts', views.contacts, name='contacts'),
     url(r'^fund', views.fund, name="fund"),
-    url(r'^team', views.team, name="team"),
+    url(r'^test', views.GalleryList.as_view(), name="test"),
     url(r'^charity', views.charity, name="charity"),
     url(r'^documents', views.documents, name="documents"),
-    url(r'^media', views.media, name="media"),
-    url(r'^test', views.PersonList.as_view(), name="test"),
+    url(r'^gallery', views.GalleryList.as_view(), name="gallery"),
+    url(r'^team', views.PersonList.as_view(), name="team"),
 )

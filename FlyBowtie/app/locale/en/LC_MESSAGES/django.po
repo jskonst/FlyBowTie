@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-02 16:41+0300\n"
+"POT-Creation-Date: 2018-11-21 20:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: app/templates/app/about.html:13
+#: app/templates/app/about.html:16
 msgid ""
 "«Полет бабочки» – социальный проект Фонда «Доброе дело», получивший в 2016 "
 "году поддержку в рамках «президентских» \n"
@@ -31,7 +31,7 @@ msgstr ""
 "Support of Civic Activity in Small Towns and Rural Areas \n"
 "                    «<a href=\"\">Perspective</a>»."
 
-#: app/templates/app/about.html:16
+#: app/templates/app/about.html:19
 msgid ""
 "В рамках проекта мы вовлекаем молодых людей с ограниченными возможностями "
 "здоровья, проживающих городах и районах Ивановской\n"
@@ -56,7 +56,7 @@ msgstr ""
 "activity of youth with disabilities, as well as contributing to their "
 "further employment or self-employment."
 
-#: app/templates/app/about.html:23
+#: app/templates/app/about.html:26
 msgid ""
 "Участники проекта, 25 жителей Ивановской области в возрасте от 14 до 25 лет "
 "с ограниченными возможностями здоровья, проходят\n"
@@ -71,7 +71,7 @@ msgstr ""
 "home computers unique design \n"
 "layouts of bow ties using a software application created within the project."
 
-#: app/templates/app/about.html:27
+#: app/templates/app/about.html:30
 msgid ""
 "Готовый продукт, галстук-бабочку, участники проекта могут изготовить "
 "самостоятельно: распечатав на 3D-принтере \n"
@@ -87,7 +87,7 @@ msgstr ""
 "by the Center for Innovative Youth Creativity (TsMIT) «<a href=\"http://"
 "cmit37.ru\">Agency of Innovations</a>»."
 
-#: app/templates/app/about.html:31
+#: app/templates/app/about.html:34
 msgid ""
 "Участники проекта получают дистанционный доступ к Интернет-порталу проекта, "
 "обучаются основам интернет-маркетинга и реализуют\n"
@@ -105,7 +105,7 @@ msgstr ""
 "\">Children of the Ivanovo Region</a>» and the Education Department \n"
 "of the Ivanovo City Administration."
 
-#: app/templates/app/about.html:35
+#: app/templates/app/about.html:38
 msgid ""
 "Разработка ПО, сайта, учебных курсов и методических материалов будет "
 "осуществляться совместно с Центром технического\n"
@@ -124,7 +124,7 @@ msgstr ""
 "adaptation \n"
 "of more young people with disabilities."
 
-#: app/templates/app/charity.html:13
+#: app/templates/app/charity.html:16
 msgid ""
 "На сегодняшней день проект располагает финансовыми средствами на участие 25 "
 "молодых людей, проживающих в Ивановской области. \n"
@@ -154,46 +154,46 @@ msgstr ""
 "find their place in life, unleash their \n"
 "creative and entrepreneurial potential."
 
-#: app/templates/app/contacts.html:14
+#: app/templates/app/contacts.html:17
 msgid "Фонд социальной помощи и поддержки населения"
 msgstr "Social Assistance and Support Fund"
 
-#: app/templates/app/contacts.html:15
+#: app/templates/app/contacts.html:18
 msgid "Адрес:153006, Ивановская обл.,"
 msgstr "Address: 153006, Ivanovo region,"
 
-#: app/templates/app/contacts.html:16
+#: app/templates/app/contacts.html:19
 msgid "г.Иваново, 11 проезд, д.7, оф.302"
 msgstr "Ivanovo, 11 proezd, d.7, of.302"
 
-#: app/templates/app/contacts.html:17
+#: app/templates/app/contacts.html:20
 msgid "тел. +7 (930) 005-69-59"
 msgstr "phone: +7 (930) 005-69-59"
 
-#: app/templates/app/contacts.html:18
+#: app/templates/app/contacts.html:21
 msgid "Проект в социальных сетях"
 msgstr "Project in social networks"
 
-#: app/templates/app/documents.html:13
+#: app/templates/app/documents.html:16
 msgid ""
 "Руководство для участников проекта \"Полёт бабочки\" \"Интернет-маркетинг\""
 msgstr ""
 "Guide for participants of the project \"Flight of the butterfly\" \"Internet "
 "marketing\""
 
-#: app/templates/app/documents.html:14
+#: app/templates/app/documents.html:17
 msgid "Критерии отбора участников проекта \"Полёт бабочки\""
 msgstr ""
 "Criteria for the selection of participants of the project \"Flight of the "
 "butterfly\""
 
-#: app/templates/app/documents.html:15
+#: app/templates/app/documents.html:18
 msgid "Отчет о выполнении первого этапа проекта \"Полёт бабочки\""
 msgstr ""
 "Report on the implementation of the first stage of the project \"Flight of "
 "the butterfly\""
 
-#: app/templates/app/fund.html:14
+#: app/templates/app/fund.html:17
 msgid ""
 "Фонд социальной помощи и поддержки населения \"Доброе дело\" основан в 2014 "
 "году."
@@ -201,11 +201,11 @@ msgstr ""
 "The Foundation for Social Assistance and Support of the Population \"Good "
 "Work\" was founded in 2014."
 
-#: app/templates/app/fund.html:15
+#: app/templates/app/fund.html:18
 msgid "Основные цели деятельности:"
 msgstr "The main objectives of the activity:"
 
-#: app/templates/app/fund.html:17
+#: app/templates/app/fund.html:20
 msgid ""
 "Оказание социальной и материальной, консультационной помощи гражданам, "
 "находящимся в сложной жизненной ситуации."
@@ -213,7 +213,7 @@ msgstr ""
 "Provision of social and material, counseling assistance to citizens in "
 "difficult life situations."
 
-#: app/templates/app/fund.html:18
+#: app/templates/app/fund.html:21
 msgid ""
 "Оказание различной помощи и поддержки пожилым людям, детям-сиротам и "
 "престарелым гражданам, находящимся\n"
@@ -225,7 +225,7 @@ msgstr ""
 "care of the state, the poor and those in need of care, and other persons in "
 "need of assistance."
 
-#: app/templates/app/fund.html:20
+#: app/templates/app/fund.html:23
 msgid ""
 "Оказание поддержки и материальной помощи одаренным социально необеспеченным "
 "студентам, школьникам, дошкольникам."
@@ -233,33 +233,33 @@ msgstr ""
 "Providing support and material assistance to gifted socially disadvantaged "
 "students, schoolchildren, preschoolers."
 
-#: app/templates/app/fund.html:23
+#: app/templates/app/fund.html:26
 msgid "Основные целевые группы:"
 msgstr "Main target groups:"
 
-#: app/templates/app/fund.html:25
+#: app/templates/app/fund.html:28
 msgid "Социально незащищенные слои населения."
 msgstr "Socially vulnerable groups of the population."
 
-#: app/templates/app/fund.html:26
+#: app/templates/app/fund.html:29
 msgid "Люди с ограниченными физическими возможностями."
 msgstr "People with disabilities."
 
-#: app/templates/app/fund.html:27
+#: app/templates/app/fund.html:30
 msgid "Молодые люди, нуждающиеся в дополнительной поддержке."
 msgstr "Young people in need of additional support."
 
-#: app/templates/app/fund.html:30
+#: app/templates/app/fund.html:33
 msgid "Основные виды деятельности:"
 msgstr "Main activities:"
 
-#: app/templates/app/fund.html:32
+#: app/templates/app/fund.html:35
 msgid ""
 "Разработка благотворительных программ и осуществление благотворительной "
 "деятельности."
 msgstr "Development of charity programs and charitable activities."
 
-#: app/templates/app/fund.html:33
+#: app/templates/app/fund.html:36
 msgid ""
 "Объединение усилий различных благотворительных организаций, направленных\n"
 "                    на оказание помощи и поддержки лиц, нуждающихся в помощи."
@@ -267,7 +267,7 @@ msgstr ""
 "Combining the efforts of various charitable organizations aimed at \n"
 "providing assistance and support to those in need of assistance."
 
-#: app/templates/app/fund.html:35
+#: app/templates/app/fund.html:38
 msgid ""
 "Разработка и реализация проектов, позволяющих объединить средства крупного, "
 "среднего и малого бизнеса,\n"
@@ -279,7 +279,7 @@ msgstr ""
 "and individuals for the development of charity and financing of the social "
 "sphere."
 
-#: app/templates/app/fund.html:37
+#: app/templates/app/fund.html:40
 msgid ""
 "Проведение благотворительных мероприятий, опираясь на содействие "
 "государственных и общественных организаций, \n"
@@ -290,7 +290,7 @@ msgstr ""
 "public organizations, creative \n"
 "unions, entrepreneurs, initiative groups of citizens."
 
-#: app/templates/app/fund.html:39
+#: app/templates/app/fund.html:42
 msgid ""
 "Содействие привлечению внимания к проблемам детей, престарелых и малоимущих "
 "граждан, находящихся на попечении государства."
@@ -299,46 +299,46 @@ msgstr ""
 "public organizations, creative \n"
 "unions, entrepreneurs, initiative groups of citizens."
 
-#: app/templates/app/fund.html:41
+#: app/templates/app/fund.html:44
 msgid "География деятельности:"
 msgstr "Activity geography:"
 
-#: app/templates/app/fund.html:41
+#: app/templates/app/fund.html:44
 msgid "Ивановская область"
 msgstr "Ivanovo region"
 
 #: app/templates/app/includes/menu.html:9
-#: app/templates/app/includes/newmenu.html:9 app/views.py:45
+#: app/templates/app/includes/newmenu.html:9 app/views.py:48
 msgid "Фонд \"Доброе дело\""
 msgstr "Fund \"Good deal\""
 
 #: app/templates/app/includes/menu.html:12
-#: app/templates/app/includes/newmenu.html:12 app/views.py:26
+#: app/templates/app/includes/newmenu.html:12 app/views.py:29
 msgid "О проекте"
 msgstr "About the project"
 
 #: app/templates/app/includes/menu.html:15
-#: app/templates/app/includes/newmenu.html:15 app/views.py:54
+#: app/templates/app/includes/newmenu.html:15 app/templates/app/team.html:15
 msgid "Команда"
 msgstr "Team"
 
 #: app/templates/app/includes/menu.html:18
-#: app/templates/app/includes/newmenu.html:18 app/views.py:63
+#: app/templates/app/includes/newmenu.html:18 app/views.py:57
 msgid "Благотворительность"
 msgstr "Charity"
 
 #: app/templates/app/includes/menu.html:21
-#: app/templates/app/includes/newmenu.html:25 app/views.py:81
+#: app/templates/app/includes/newmenu.html:25 app/views.py:75
 msgid "Медиагалерея"
 msgstr "Media Gallery"
 
 #: app/templates/app/includes/menu.html:24
-#: app/templates/app/includes/newmenu.html:26 app/views.py:72
+#: app/templates/app/includes/newmenu.html:26 app/views.py:66
 msgid "Документы"
 msgstr "Documentation"
 
 #: app/templates/app/includes/menu.html:27
-#: app/templates/app/includes/newmenu.html:27 app/views.py:36
+#: app/templates/app/includes/newmenu.html:27 app/views.py:39
 msgid "Контакты"
 msgstr "Contacts"
 
@@ -346,7 +346,7 @@ msgstr "Contacts"
 msgid "Еще"
 msgstr "More"
 
-#: app/templates/app/team.html:13
+#: app/templates/app/team.html:16 app/templates/app/test.html:16
 msgid ""
 "Команда проекта - это творческие, неравнодушные люди, силами которых проект "
 "развивается и набирает обороты. \n"
@@ -357,6 +357,6 @@ msgstr ""
 "developing and gaining momentum. Feel you can and want to help? We always "
 "welcome like-minded people and are ready to take you to the team!"
 
-#: app/views.py:16
+#: app/views.py:19
 msgid "Полёт бабочки"
 msgstr "FlyBowtie"
