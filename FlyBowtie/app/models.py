@@ -30,3 +30,10 @@ class MediaList(models.Model):
     def __str__(self):
         return '{0}'.format(self.imgContent)
 
+class CarouselList(models.Model):  
+    imgCarousel = models.ImageField(upload_to='', verbose_name='Изображение')
+    class Meta(object):
+        verbose_name_plural = "Изображения для карусельки"
+        verbose_name = "изображение для карусельки"
+    def __str__(self):
+        return '{0}'.format(self.imgCarousel)

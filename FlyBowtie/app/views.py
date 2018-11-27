@@ -2,8 +2,14 @@ from django.shortcuts import render
 from django.http import HttpRequest
 from django.utils.translation import ugettext as _
 from django.views.generic import ListView
-from .models import Person, MediaList
+from .models import Person, MediaList, CarouselList
 
+
+
+class Home(ListView):
+    model = CarouselList
+    context_object_name = 'carousel'
+    template_name = 'app/index.html'
 
 class PersonList(ListView):
     model = Person
@@ -14,16 +20,6 @@ class GalleryList(ListView):
     model = MediaList
     context_object_name = 'gallery'
     template_name = 'app/media.html'
-
-def home(request):
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/index.html',
-        {
-            'title': _('Полёт бабочки'),
-        }
-    )
 
 def about(request):
     assert isinstance(request, HttpRequest)

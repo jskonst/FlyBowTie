@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-21 20:59+0300\n"
+"POT-Creation-Date: 2018-11-27 20:17+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -308,12 +308,12 @@ msgid "Ивановская область"
 msgstr "Ivanovo region"
 
 #: app/templates/app/includes/menu.html:9
-#: app/templates/app/includes/newmenu.html:9 app/views.py:48
+#: app/templates/app/includes/newmenu.html:9 app/views.py:49
 msgid "Фонд \"Доброе дело\""
 msgstr "Fund \"Good deal\""
 
 #: app/templates/app/includes/menu.html:12
-#: app/templates/app/includes/newmenu.html:12 app/views.py:29
+#: app/templates/app/includes/newmenu.html:12 app/views.py:30
 msgid "О проекте"
 msgstr "About the project"
 
@@ -323,30 +323,39 @@ msgid "Команда"
 msgstr "Team"
 
 #: app/templates/app/includes/menu.html:18
-#: app/templates/app/includes/newmenu.html:18 app/views.py:57
+#: app/templates/app/includes/newmenu.html:18 app/views.py:58
 msgid "Благотворительность"
 msgstr "Charity"
 
 #: app/templates/app/includes/menu.html:21
-#: app/templates/app/includes/newmenu.html:25 app/views.py:75
+#: app/templates/app/includes/newmenu.html:25 app/templates/app/media.html:15
 msgid "Медиагалерея"
 msgstr "Media Gallery"
 
 #: app/templates/app/includes/menu.html:24
-#: app/templates/app/includes/newmenu.html:26 app/views.py:66
+#: app/templates/app/includes/newmenu.html:26 app/views.py:67
 msgid "Документы"
 msgstr "Documentation"
 
 #: app/templates/app/includes/menu.html:27
-#: app/templates/app/includes/newmenu.html:27 app/views.py:39
+#: app/templates/app/includes/newmenu.html:27 app/views.py:40
 msgid "Контакты"
 msgstr "Contacts"
+
+#: app/templates/app/includes/menu.html:30
+#: app/templates/app/includes/newmenu.html:28
+msgid "Приложение"
+msgstr "Application"
 
 #: app/templates/app/includes/newmenu.html:22
 msgid "Еще"
 msgstr "More"
 
-#: app/templates/app/team.html:16 app/templates/app/test.html:16
+#: app/templates/app/index.html:2
+msgid "Полёт бабочки"
+msgstr "FlyBowtie"
+
+#: app/templates/app/team.html:16
 msgid ""
 "Команда проекта - это творческие, неравнодушные люди, силами которых проект "
 "развивается и набирает обороты. \n"
@@ -356,7 +365,3 @@ msgstr ""
 "The project team is creative, caring people, by whose efforts the project is "
 "developing and gaining momentum. Feel you can and want to help? We always "
 "welcome like-minded people and are ready to take you to the team!"
-
-#: app/views.py:19
-msgid "Полёт бабочки"
-msgstr "FlyBowtie"
